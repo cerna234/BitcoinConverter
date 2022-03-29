@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+h1{
+    color: white;
+}
+select{
+    background-color: blue;
+    padding: 3px;
+    color: white;
+    border: none;
+
+}
+
+#input{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputContainer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+
+   
+}
+
+input{
+    background-color: none;
+   
+    padding: 3px;
+    
+    align-items: center;
+    
+   
+}
+
+
+#output{
+    color: rgb(130, 130, 130);
+    
+}
+
+#symbol{
+    width: 40px;
+    height: 20px;
+    margin: 20px;
+}
+
+#Title{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 140, 0);
+}
+
+#submitButton{
+    background: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+}
