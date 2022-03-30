@@ -18,6 +18,7 @@ select{
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 }
 
 #inputContainer{
@@ -25,6 +26,7 @@ select{
     align-items: center;
     display: flex;
     justify-content: center;
+  
     
 
    
@@ -36,8 +38,17 @@ input{
     padding: 3px;
     
     align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid rgba(206, 205, 205, 0.322);
+    color: rgb(255, 255, 255);
+    
     
    
+}
+
+input::placeholder{
+    color: rgb(73, 73, 73);
+    padding: 10px;
 }
 
 

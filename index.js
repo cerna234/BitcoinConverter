@@ -7,9 +7,6 @@ let output = document.getElementById("output");
 let currency = document.getElementById("currency");
 let symbol = document.getElementById("symbol");
 
-
-
-
 request.open('GET', "https://api.coindesk.com/v1/bpi/currentprice.json", true)
 request.onload = function () {
   // Begin accessing JSON data here
@@ -69,10 +66,10 @@ request.onload = function () {
                         symbol.src = "British.png";
                         monetarySymbol = "&#163"
                 }
-   
+                input.style.border = "  1px solid rgba(206, 205, 205, 0.322)"
          
                   
-                output.innerHTML = monetarySymbol + " " + input.value + " = "  +  (input.value / chosenCurrency) + "&#8383"; 
+                output.innerHTML = monetarySymbol + " " + input.value + " = "  +  (input.value / chosenCurrency) + " &#8383"; 
    
                
                      
@@ -96,7 +93,7 @@ request.onload = function () {
 
 
 
-
-
-
 request.send()
+
+
+
