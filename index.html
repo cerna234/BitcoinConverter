@@ -4,37 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bitcoin Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 
    
+    <div id="Pagecontainer">
+        <div id="input">
+            <h1 id="Title">Bitcoin Converter</h1>
+       
+            <div id="inputContainer">
+       
+               <img id="symbol"  src="us.png">
+               <input id="inputValue" type="number" placeholder="value">
+               <select id="currency">
+                   <option value="USD">USD</option>
+                   <option value="EUR">EUR</option>
+                   <option value="GBP">GBP</option>
+               </select>
+            </div>
+       
+          
+           <p id="output"></p>
+          
+           <button id="submitButton">Submit</button>
+       
+       
+         
+        </div>
 
- <div id="input">
-     <h1 id="Title">Bitcoin Converter</h1>
+        <div id="contentContainer">
+            <h3 id="Title">WHAT IS BITCOIN?</h3>
+            <p id="Content">Bitcoin is a digital currency which operates free of any central control or the oversight of banks or governments. Instead it relies on peer-to-peer software and cryptography. A public ledger records all bitcoin transactions and copies are held on servers around the world</p>
+        
+            <h3 id="Title">API USED</h3>
+            <p id="Content">CoinDesk is an information center on Bitcoins, a decentralized digital currency used around the world. One service that CoinDesk provides is the Bitcoin Price Index (BPI). This Bitcoin pricing data is calculated every minute and is published in USD, EUR, and GBP. BPI data is made available programmatically via REST API.</p>
+        
+         </div>
 
-     <div id="inputContainer">
+    </div>
 
-        <img id="symbol"  src="us.png">
-        <input id="inputValue" type="number" placeholder="value">
-        <select id="currency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-        </select>
-     </div>
 
-   
-    <p id="output"></p>
-    <button id="submitButton">Submit</button>
 
- </div>
+
+ <footer>
+    <h1 id="Title">Bitcoin Converter</h1>
+    <a href="https://github.com/cerna234/BitcoinConverter" target="_blank"><img id="githubLink" src="./github.png"></a>
+ </footer>
     
 
-
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
