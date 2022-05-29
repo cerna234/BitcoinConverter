@@ -47,15 +47,15 @@ const price = async () => {
                            input.style.border ="none";
                            if(currency.value === "USD"){
                                    chosenCurrency = UsRate;
-                                   symbol.src = "us.png";
+                                   
                                    monetarySymbol="$";
                            }else if(currency.value === "EUR"){
                                    chosenCurrency = UeropeRate;
-                                   symbol.src = "europe.png";
-                                   monetarySymbol = "&euro";
-                           }else{
+                                  
+                                   monetarySymbol = "&#x20AC";
+                           }else if(currency.value === "GBP" ){
                                    chosenCurrency = BritishPoundRate;
-                                   symbol.src = "British.png";
+                                   
                                    monetarySymbol = "&#163"
                            }
                            input.style.border = "  1px solid rgba(206, 205, 205, 0.322)"
@@ -89,8 +89,9 @@ currency.addEventListener("change", (e)=> {
         }else if(currency.value === "EUR"){
                 
                 symbol.src = "europe.png";
+
         }else{
-                chosenCurrency = BritishPoundRate;
+                
                 symbol.src = "British.png";
         }
 
