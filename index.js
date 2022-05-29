@@ -61,7 +61,7 @@ const price = async () => {
                            input.style.border = "  1px solid rgba(206, 205, 205, 0.322)"
                     
                              
-                           output.innerHTML = monetarySymbol + " " + input.value + " = "  + (input.value / chosenCurrency) + " &#8383"; 
+                           output.innerHTML = monetarySymbol + " " + input.value + "   =  "  + "  " + (input.value / chosenCurrency) + " &#8383"; 
                           
                           
                                 
